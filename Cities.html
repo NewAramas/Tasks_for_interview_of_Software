@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<script src="Controller.js"></script>
+
+<form>
+
+    <input type = 'checkbox' id = 'checkBox1' onchange = 'method1("checkBox1",  "northernmostCity" );'/>Показать самый северный город<br/>
+    <div id="northernmostCity"></div>
+
+    <input type = 'checkbox' id = 'checkBox2' onchange = 'method1("checkBox2",  "southernmostCity");'/>Показать самый южный город<br/>
+    <div id="southernmostCity"></div>
+
+    <input type = 'checkbox' id = 'checkBox3' onchange = 'method1("checkBox3", "westernmostCity");'/>Показать самый западный город<br/>
+     <div id="westernmostCity"></div>
+
+    <input type = 'checkbox' id = 'checkBox4' onchange = 'method1("checkBox4",  "easternmostCity");'/>Показать самый восточный город  <br/>
+    <div id="easternmostCity"></div>
+    <br/>
+
+    <p>Введите широту от -90 до 90</p>
+    <input id='lat' type="number" min="-90" max="90">
+
+    <p>Введите долготу от -180 до 180</p>
+    <p><input id="long" type="number" min="-180" max="180"></p>
+    <input type="button" value="Найти ближайший город" onclick="method2()" ><br/>
+    <div id="divClosestCity"></div><br/>
+
+    <input type="button" value="Найти все аббревиатуры без дубликатов" onclick="method3()"><br/>
+    <div id="divAllStates"></div>
+</form>
+
+</body>
+</html>
