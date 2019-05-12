@@ -9,7 +9,7 @@
         }
     }
 
-    function Controller(cities) {
+    function Map (cities) {
 
         this.cities = cities;
 
@@ -146,7 +146,7 @@
     var city7 = new City('Memphis, TN', 35.15, -90.05);
 
     var listCities = [city1, city2, city3, city4, city5, city6, city7];
-    var map1 = new Controller(listCities);
+    var map1 = new Map(listCities);
 
 
     function method1(choiceOfCheckBox, inputCity) {
